@@ -1,3 +1,5 @@
+let alphabet=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
 function splitArrayIntoChunksOfLen(arr, len) {
   let chunks = [];
   let i = 0;
@@ -7,7 +9,6 @@ function splitArrayIntoChunksOfLen(arr, len) {
   }
   return chunks;
 }
-let alphabet=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 console.log(splitArrayIntoChunksOfLen(alphabet,4));
 
 // es6
