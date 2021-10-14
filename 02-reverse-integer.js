@@ -1,13 +1,6 @@
-/************************************************************************
-  @condition - Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
-************************************************************************/
-/**
- * @param {number} numInteger
- * @return {number}
-**/
-
 function reverseInteger(numInteger) {
-  if(numInteger === 0) return 0;
+  if(numInteger === 0) 
+    return 0;
 
   const multFact = numInteger / Math.abs(numInteger);
   const absNum = Math.abs(numInteger);
@@ -15,7 +8,8 @@ function reverseInteger(numInteger) {
     absNum.toString().split('').reverse().join('')
   );
 
-  if(revNum > 2 ** 31 -1 || revNum < -(2 ** 31)) return 0;
+  if(revNum > 2 ** 31 -1 || revNum < -(2 ** 31)) 
+    return 0;
   return revNum * multFact;
 }
 
